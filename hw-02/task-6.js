@@ -22,9 +22,3 @@ for (let number of numbers){
 
 alert(`Общая сумма чисел равна ${total}`);
 
-
-// let d= [2, 3, '7', 67, 90];
-// console.log(d.find(function(el, index){
-//     if (el === '7')
-//         return index;
-// }) )
