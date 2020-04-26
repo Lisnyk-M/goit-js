@@ -1,7 +1,7 @@
 const checkForSpam = function (message) {
     const spamFinded =  message.toLowerCase().includes('spam');
-    const saleFinded =  message.toLowerCase().includes('sale');
-    return spamFinded || saleFinded ? true : false;
+    const saleFinded =  message.toLowerCase().includes('sale');    
+    return spamFinded || saleFinded;
 }
 
 /*

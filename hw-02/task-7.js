@@ -1,16 +1,20 @@
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function (login) {
-    return login.length >= 4 && login.length < 17 ? true : false;
+    return login.length >= 4 && login.length < 17;
 }
 
+// const isLoginUnique = function (allLogins, login) {
+//     return allLogins.indexOf(login) === -1;
+// }
+
+// const isLoginUnique = function (allLogins, login) {
+//     return !allLogins.find(unique => unique === login);
+// }  
+
 const isLoginUnique = function (allLogins, login) {
-    for (let tmpLogin of allLogins) {
-        if (login === tmpLogin)
-            return false;
-    }
-    return true;
-}
+    return !allLogins.includes(login);
+} 
 
 const addLogin = function (allLogins, login) {
     if (!isLoginValid(login)) {
