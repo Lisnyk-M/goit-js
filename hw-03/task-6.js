@@ -27,14 +27,20 @@ const products = [
 //     return quantity;
 // };
 
+// const calculateTotalPrice = function (allProdcuts, productName) {
+//     let quantity = 0;
+//     allProdcuts
+//     .filter(element => element.name === productName)
+//     .forEach(element => {
+//         quantity = element.price  * element.quantity;
+//     })
+//     return quantity;
+// };
+
 const calculateTotalPrice = function (allProdcuts, productName) {
-    let quantity = 0;
-    allProdcuts
-    .filter(element => element.name === productName)
-    .forEach(element => {
-        quantity = element.price  * element.quantity;
-    })
-    return quantity;
+    return allProdcuts
+    .filter(el => el.name === productName)
+    .reduce((quantity, element) => quantity + element.price * element.quantity, 0);
 };
 
 /*

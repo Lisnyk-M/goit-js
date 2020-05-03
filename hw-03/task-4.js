@@ -10,9 +10,7 @@
 const countTotalSalary = function(employees) {
     return Object
     .values(employees)
-    .reduce((total, iter) =>{
-        return total + iter;
-    }, 0);
+    .reduce((total, iter) =>total + iter, 0);
   };
   
   /*
