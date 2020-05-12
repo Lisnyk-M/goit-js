@@ -2,7 +2,7 @@ const inventory = {
   items: ['Knife', 'Gas mask'],
   add(itemName) {
     console.log(`Adding ${itemName} to inventory`);
-    console.log('this ==== ', this);
+    // console.log('this ==== ', this);
     
     this.items.push(itemName);
   },
