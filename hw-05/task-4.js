@@ -21,9 +21,9 @@ class StringBuilder {
     let tmpString = this._value;
     this._value = str + tmpString;
   }
-  pad(str){
-    let tmpString = this._value;
-    this._value = str + tmpString + str; 
+  pad(str){ 
+    this.append(str);
+    this.prepend(str);
   }
 }
 

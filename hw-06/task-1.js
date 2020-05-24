@@ -1,16 +1,8 @@
-import * as users from './users.js';
-// console.log('usersAr: ', usersAr.default);
+import users from './users.js';
 
+// const getUserNames = users => users.map(element => element.name);
 
-// const getUserNames = function(users){
-//   const names = [];
-//   users.forEach(element => names.push(element.name) );
-//   return names;
-// }
+const getUserNames = users => users.map(({name}) => name);
 
-const getUserNames = function(users){  
-  return users.map(element => element.name);  
-}
-
-console.log(getUserNames(users.default));
+console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]
