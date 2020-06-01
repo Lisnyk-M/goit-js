@@ -1,0 +1,32 @@
+.gallery {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.items {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  height: auto;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+.box-for-task8{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: #888;
+  outline: 1px solid #338;
+}
