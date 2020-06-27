@@ -4,7 +4,7 @@ const click = (event) => {
         counterValue++;
     }
     if (event.target.getAttribute('data-action') === 'decrement') {
-        counterValue > 0 ? counterValue -- : 0;
+        counterValue = counterValue > 0 ? counterValue - 1 : 0;
     }
     
     document.querySelector('#value').textContent = counterValue;
